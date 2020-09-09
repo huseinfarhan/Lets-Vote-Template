@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- My Fonts -->
+      <link
+         href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Playfair+Display:400,400i,700,700i,900,900i&display=swap"
+         rel="stylesheet">
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+      <!-- My CSS -->
+      <link rel="stylesheet" href="frontend/styles/main.css">   
+      <title>Vote Result - Let's Vote</title>
+   </head>
+   <body>
+      <!-- NAVBAR START -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+         <div class="container-fluid border border-0 rounded-lg ">
+            <a class="navbar-brand" href="#"><img src="frontend/images/Let’s Vote. 2x.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse menu-bar" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown d-flex align-items-center">
+                     <img src="frontend/images/User icon.png" alt="">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Farhan Husein
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Logout</a>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- NAVBAR END -->
+
+      <!-- DASHBOARD SIGN START -->
+      <div class="container-fluid">
+         <h3 class="dashboard-sign">
+            <span class="border border-0 rounded-lg">Vote Result</span>
+         </h3>
+      </div>
+      <!-- DASHBOARD SIGN END -->
+
+      <!-- INFO TABLE START -->
+      <div class="container table-responsive tbl-result-user">
+         <table class="table table-borderless">
+            <thead>
+               <tr>
+                  <th scope="col" class="tbl-desc-res">Description</th>
+                  <th scope="col" class="tbl-can-res">Candidate</th>
+                  <th scope="col" class="tbl-dd-res">Due Date</th>
+                  <th scope="col" class="tbl-poll-res">Poll Status</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>
+                     <div class="d-lg-flex align-items-center">
+                        <img src="frontend/images/desc.png" alt="">
+                        <p>Ketua unit kegiatan mahasiswa HIMASI</p>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="d-lg-flex align-items-center">
+                        <img src="frontend/images/users.png" alt="">
+                        <p>3 candidates</p>
+                     </div>
+                  </td>
+                  <td>
+                     <div class="d-lg-flex align-items-center">
+                        <img src="frontend/images/calendar.png" alt="">
+                        <p>5th January 2020</p>
+                     </div>
+                  </td>
+                  <td>
+                     <button class="btn btn-danger" disabled>Expired</button>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <!-- INFO TABLE END -->
+
+      <!-- PIE CHART RESULT START -->
+      <div class="container">
+         <div class="row justify-content-center pie-chart">
+            <div class="col-lg-8">
+               <canvas id="myChart"></canvas>
+            </div>
+         </div>
+         
+      </div>
+      <!-- PIE CHART RESULT END -->
+
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+      </script>
+
+      <!-- ChartJS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" 
+         integrity="sha512-vBmx0N/uQOXznm/Nbkp7h0P1RfLSj0HQrFSzV8m7rOGyj30fYAOKHYvCNez+yM8IrfnW0TCodDEjRqf6fodf/Q==" 
+         crossorigin="anonymous"></script>
+      <!-- ChartJS Data Script -->
+      <script>
+         var ctx = document.getElementById('myChart');
+         // ctx.width = 40;
+         // ctx.height = 40;
+         // And for a doughnut chart
+         var myDoughnutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+               datasets: [
+                  {  data: [10, 20, 30],
+                     backgroundColor: ['#ff6384', '#ffce56', '#36a2eb']
+                  },
+                  // {
+                  //    label: "Red",
+                  //    data: 10,
+                  //    backgroundColor: "#ff6384"
+                  // },
+                  // {
+                  //    label: "Yellow",
+                  //    data: 20,
+                  //    backgroundColor: "#ffce56"
+                  // },
+                  // {
+                  //    label: "Blue",
+                  //    data: 30,
+                  //    backgroundColor: "#36a2eb"
+                  // }
+               ],
+               // These labels appear in the legend and in the tooltips when hovering different arcs
+               labels: [ 'Denis Anwar', 'Hilton Michelle', 'Steffani Glin' ]
+            },
+            options: {
+               // maintainAspectRatio: false
+            }
+         });
+      </script>
+   </body>
+</html>

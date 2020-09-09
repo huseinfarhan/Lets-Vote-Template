@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- My Fonts -->
+   <link
+      href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800|Playfair+Display:400,400i,700,700i,900,900i&display=swap"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+   <!-- DataTables CSS    -->
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+
+   <!-- My CSS -->
+   <link rel="stylesheet" href="frontend/styles/main.css">
+   <title>Dashboard - Let's Vote</title>
+</head>
+
+<body>
+   <!-- NAVBAR START -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+      <div class="container-fluid border border-0 rounded-lg ">
+         <a class="navbar-brand" href="#"><img src="frontend/images/Let’s Vote. 2x.png" alt=""></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+   
+         <div class="collapse navbar-collapse menu-bar" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item dropdown d-flex align-items-center">
+                  <img src="frontend/images/User icon.png" alt="">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                     aria-haspopup="true" aria-expanded="false">
+                     Farhan Husein
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="#">Logout</a>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <!-- NAVBAR END -->
+
+   <!-- DASHBOARD SIGN START -->
+   <div class="container-fluid">
+      <h3 class="dashboard-sign">
+         <span class="border border-0 rounded-lg">Dashboard</span>
+      </h3>
+   </div>
+   <!-- DASHBOARD SIGN END -->
+
+   <!-- TABLE START -->
+   <div class="container-fluid table-responsive tbl-dashboard-user">
+      <table class="table table-hover table-striped" id="tbl-user">
+         <thead>
+            <tr>
+               <th scope="col" class="tbl-num-header">No.</th>
+               <th scope="col" class="tbl-poll-name">Polling Name</th>
+               <th scope="col" class="tbl-candidate">Candidate</th>
+               <th scope="col" class="tbl-due-date">Due Date</th>
+               <th scope="col" class="tbl-poll-status">Poll Status</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <th scope="row">1</th>
+               <td class="d-flex align-items-center">
+                  <img src="frontend/images/rafiki.png" alt="">
+                  <p class="td-font">Ketua unit kegiatan mahasiswa HIMASI</p>
+               </td>
+               <td class="td-font"><p>3 people</p></td>
+               <td class="td-font"> <p>Sunday, <br> 5th January 2020 </p> </td>
+               <td>
+                  <button type="button" class="btn btn-success" disabled>On Progress</button>
+                  <button type="button" class="btn btn-outline-primary">View</button>
+               </td>
+            </tr>
+            <tr>
+               <th scope="row">2</th>
+               <td class="d-flex align-items-center">
+                  <img src="frontend/images/rafiki.png" alt="">
+                  <p class="td-font">Ketua OSIS SMA Harvard Jakarta</p>
+               </td>
+               <td class="td-font"><p>3 people</p></td>
+               <td class="td-font"><p>Monday, <br> 15th February 2020 </p></td>
+               <td>
+                  <button type="button" class="btn btn-danger" disabled>Expired</button>
+                  <button type="button" class="btn btn-outline-primary">View</button>
+               </td>
+            </tr>
+            <tr>
+               <th scope="row">3</th>
+               <td class="d-flex align-items-center">
+                  <img src="frontend/images/rafiki.png" alt="">
+                  <p class="td-font">Ketua BEM Universitas Harvard</p>
+               </td>
+               <td class="td-font"><p>3 people</p></td>
+               <td class="td-font"><p>Friday, <br> 16th March 2020 </p></td>
+               <td>
+                  <button type="button" class="btn btn-warning" disabled>Coming Soon</button>
+                  <button type="button" class="btn btn-outline-primary">View</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <!-- TABLE END -->
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+   </script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+   </script>
+
+   <!-- DataTables Javascript -->
+   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+
+   <!-- Javascript syntax for DataTables -->
+   <script>
+      $(document).ready(function() {
+         $('#tbl-user').DataTable()
+      })
+   </script>
+</body>
+
+</html>
