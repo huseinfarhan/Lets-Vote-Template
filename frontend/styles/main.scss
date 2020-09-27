@@ -358,4 +358,39 @@ nav {
     margin-top: 20px;
     margin-bottom: 40px;
 }
+
+
+// <!-- ADMIN - DASHBOARD -->
+// LEFT CONTENT START
+.left-admin {
+    // logo
+    .logo-admin {
+        max-width: 251px;
+        max-height: 59px;
+        margin-top: 83px;
+        margin-bottom: 100px;
+    }
+    p {
+        padding-top: 14px;
+        padding-left: 40px;
+        font-size: 17px;
+        color: #767676;
+    }
+    a {
+        margin-bottom: 20px;
+    }
+    .btn {
+        max-width: 279px;
+        padding: 0 10px;
+        // background-color: rgba(47, 50, 106, 1);
+        // opacity: 0.3;
+    }
+    .btn:hover {
+        background-color: rgba(47, 50, 106, 0.3);
+    }
+    .btn-active {
+        background-color: rgba(47, 50, 106, 0.3);
+        // color: #2F326A;
+    }
+}
 }

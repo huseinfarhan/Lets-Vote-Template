@@ -266,5 +266,30 @@ nav .container-fluid a img {
     margin-top: 20px;
     margin-bottom: 40px;
   }
+  .left-admin .logo-admin {
+    max-width: 251px;
+    max-height: 59px;
+    margin-top: 83px;
+    margin-bottom: 100px;
+  }
+  .left-admin p {
+    padding-top: 14px;
+    padding-left: 40px;
+    font-size: 17px;
+    color: #767676;
+  }
+  .left-admin a {
+    margin-bottom: 20px;
+  }
+  .left-admin .btn {
+    max-width: 279px;
+    padding: 0 10px;
+  }
+  .left-admin .btn:hover {
+    background-color: rgba(47, 50, 106, 0.3);
+  }
+  .left-admin .btn-active {
+    background-color: rgba(47, 50, 106, 0.3);
+  }
 }
 /*# sourceMappingURL=main.css.map */
