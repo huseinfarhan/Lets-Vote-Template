@@ -291,5 +291,11 @@ nav .container-fluid a img {
   .left-admin .btn-active {
     background-color: rgba(47, 50, 106, 0.3);
   }
+  .left-admin .new-poll-btn {
+    background-color: #9653FF;
+  }
+  .left-admin .new-poll-btn p {
+    color: white;
+  }
 }
 /*# sourceMappingURL=main.css.map */

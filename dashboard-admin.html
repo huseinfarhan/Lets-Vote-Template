@@ -29,7 +29,7 @@
    <div class="container-fluid">
       <div class="row">
          <!-- LEFT SIDE CONTENT START -->
-         <div class="col-4 border border-danger d-flex flex-column  left-admin">
+         <div class="col-4 border border-danger d-flex flex-column left-admin">
             <img src="frontend/images/login/Let’s Vote. 2x.png" alt="logo" class="logo-admin">
             <a href="#" class="d-flex align-items-center btn btn-active">
                <img src="/frontend/images/grid.png" alt="">
@@ -47,14 +47,41 @@
                <img src="/frontend/images/rotate-ccw.png" alt="">
                <p>Polling History</p>
             </a>
-            <a href="#" class="d-flex align-items-center btn">
-               <img src="/frontend/images/rotate-ccw.png" alt="">
+            <a href="#" class="d-flex align-items-center btn new-poll-btn">
+               <img src="/frontend/images/plus-circle.png" alt="">
                <p >New Poll</p>
             </a>
          </div>
          <!-- LEFT SIDE CONTENT END -->
          <!-- RIGHT SIDE CONTENT START -->
-         <div class="col-8 border border-primary"></div>
+         <div class="col-8 border border-primary">
+            <!-- NAVBAR START -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+               <div class="container-fluid border border-0 rounded-lg ">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse"
+                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse menu-bar" id="navbarSupportedContent">
+                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown d-flex align-items-center">
+                           <img src="frontend/images/User icon.png" alt="">
+                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Farhan Husein
+                           </a>
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Logout</a>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+            <!-- NAVBAR END -->
+         </div>
          <!-- RIGHT SIDE CONTENT END -->
       </div>
    </div>
